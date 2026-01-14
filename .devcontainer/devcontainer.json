@@ -49,7 +49,7 @@
   },
 
   "postCreateCommand": "npm install && npm run setup || true",
-  "postStartCommand": "echo 'Dev environment ready!'",
+  "postStartCommand": "echo '🚀 Dev environment ready!' && git config --global --add safe.directory ${containerWorkspaceFolder}",
 
   "containerEnv": {
     "NODE_ENV": "development",
